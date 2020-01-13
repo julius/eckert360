@@ -433,14 +433,16 @@
     switchScene(scenes[0]);
 
     // Intro
-        window.addEventListener('mousedown', removeIntro);
-        function removeIntro() {
-            window.removeEventListener('mousedown', removeIntro);
-            document.querySelector('#intro').classList.add('out');
-            setTimeout(function() {
-                document.querySelector('#intro').remove();
-            }, 500);
-        }
+    window.addEventListener('mousedown', removeIntro);
+    window.addEventListener('touchstart', removeIntro);
+    function removeIntro() {
+        window.removeEventListener('mousedown', removeIntro);
+        window.removeEventListener('touchstart', removeIntro);
+        document.querySelector('#intro').classList.add('out');
+        setTimeout(function() {
+            document.querySelector('#intro').remove();
+        }, 500);
+    }
 })();
 
 /*

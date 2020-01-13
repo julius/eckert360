@@ -29,6 +29,10 @@ body.fullscreen-enabled #titleBar {
     margin: 0;
 }
 
+body.mobile #titleBar {
+    display: none;
+}
+
 #logo {
     position: fixed;
     padding: 23px 14px;
