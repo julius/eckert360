@@ -939,11 +939,12 @@ body.view-control-buttons .viewControlButton {
     font-size: 16px;
     line-height: 40px;
     transition: bottom 0.4s;
-    bottom: -40px;
-}
-#imageNav .scenePreview:hover .title {
     bottom: 0;
+    /* bottom: -40px; */
 }
+/* #imageNav .scenePreview:hover .title {
+    bottom: 0;
+} */
 
 #imageNav .scenePreview.image2 img {
     transform: translateY(-256px);
