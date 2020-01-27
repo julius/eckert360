@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Virtuelle Tour</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta
+            name="viewport"
+            content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui"
+        />
+        <style>
+            @-ms-viewport {
+                width: device-width;
+            }
+        </style>
+        <link rel="stylesheet" href="vendor/reset.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <!-- <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css" /> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <link rel="stylesheet" href="makler/makler.css" />
+    </head>
+    <body class="multiple-scenes ">
+        <div id="pano"></div>
+
+        <div id="imageNav">
+            <div class="imageNavBackdrop"></div>
+            <div class="imageNavDialog">
+                <h2>Rooms</h2>
+                <span class="close"><i class="fa fa-close"></i></span>
+                <div class="scenePreview image5" data-scene="0-wohnzimmer1">
+                    <img src="tiles/0-wohnzimmer1/preview.jpg" />
+                    <span class="title">Wohnzimmer</span>
+                </div>
+                <div class="scenePreview image5" data-scene="4-werkraum1">
+                    <img src="tiles/4-werkraum1/preview.jpg" />
+                    <span class="title">Werkraum</span>
+                </div>
+                <div class="scenePreview image1" data-scene="7-kche2">
+                    <img src="tiles/7-kche2/preview.jpg" />
+                    <span class="title">Küche</span>
+                </div>
+                <div class="scenePreview image5" data-scene="9-badezimmer">
+                    <img src="tiles/9-badezimmer/preview.jpg" />
+                    <span class="title">Badezimmer</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="titleBar">
+            <h1 class="sceneName"></h1>
+        </div>
+
+        <div id="logo"></div>
+
+        <a href="javascript:void(0)" id="fullscreenToggle">
+            <img class="icon off" src="img/fullscreen.png" />
+            <img class="icon on" src="img/windowed.png" />
+        </a>
+
+        <a href="javascript:void(0)" id="sceneListToggle">
+            <img class="icon off" src="img/expand.png" />
+            <img class="icon on" src="img/collapse.png" />
+        </a>
+
+        <div id="introBackdrop"></div>
+        <div id="intro">
+            <div class="body">
+                <div id="introLogo"></div>
+                <div id="introAnimation">
+                    <div class="hand">
+                        <i class="fa fa-hand-pointer-o"></i>
+                        <i class="fa fa-arrows"></i>
+                    </div>
+                </div>
+                360°
+            </div>
+        </div>
+
+        <script src="vendor/es5-shim.js"></script>
+        <script src="vendor/eventShim.js"></script>
+        <script src="vendor/classList.js"></script>
+        <script src="vendor/requestAnimationFrame.js"></script>
+        <script src="vendor/screenfull.min.js"></script>
+        <script src="vendor/bowser.min.js"></script>
+        <script src="vendor/marzipano.js"></script>
+
+        <script src="data.js"></script>
+        <script src="CustomView.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
